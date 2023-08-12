@@ -9,11 +9,11 @@
 
 int main(void)
 {
-	char alph;
+	int alph;
 
-	for (alph = '0'; alph <= '9'; alph++)
+	for (alph = 0; alph <= 9; alph++)
 	{
-		putchar (alph);
+		putchar (alph + '0');
 	}
 	putchar ('\n');
 	return (0);
