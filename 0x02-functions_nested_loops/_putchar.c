@@ -1,15 +1,13 @@
 #include<unistd.h>
 #include "main.h"
-/*
- *_putchar _write character
- *description : defintion function _putchar print character on stdout
+
+/**
+ *  initial main - Entry point
+ *_putchar _write the character c to stdout function write character
  *@c:charater to print
- *return: 1 if success
- */
-/*
- *description: for function _putchar used to print char
- *return: if success return 1
- *error return -1
+ *
+ * Return:on successn 1
+ *	on error, -1 returned
  */
 int _putchar(char c)
 {
