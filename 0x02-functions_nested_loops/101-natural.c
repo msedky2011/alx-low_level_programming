@@ -2,10 +2,10 @@
 #include "main.h"
 /**
  * main - entry point
- * Return: void
+ * Return: 0
  **/
 
-void main(void)
+int main(void)
 {
 	int sum;
 	int i;
@@ -19,7 +19,7 @@ void main(void)
 	}
 
 
-	printf("%d", sum);
-
+	printf("%d\n", sum);
+	return (0);
 
 }
