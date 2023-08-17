@@ -2,7 +2,7 @@
 
 /**
  * mul- _multiplie a and b
- * @: input value
+ * @a: input value
  * @b:anthor input value
  * Return: a*b
  */
