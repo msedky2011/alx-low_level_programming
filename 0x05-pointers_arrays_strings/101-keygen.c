@@ -9,10 +9,11 @@
  */
 int main(void)
 {
-	srand(time(NULL));
+	
 	int i;
 	char pass[9];
 	
+	srand(time(NULL));
 	for (i = 0; i < 8 ; i++)
 		pass[i] = ('!' + (rand() % 95));
 	printf ("%s \n", pass);
