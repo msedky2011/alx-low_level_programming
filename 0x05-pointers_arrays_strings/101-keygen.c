@@ -16,6 +16,7 @@ int main(void)
 	srand(time(NULL));
 	for (i = 0; i < 8 ; i++)
 		pass[i] = ('!' + (rand() % 95));
+	pass[8] = '\0';
 	printf ("%s \n", pass);
 
 
