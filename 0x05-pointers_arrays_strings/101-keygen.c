@@ -11,12 +11,12 @@ int main(void)
 {
 	
 	int i;
-	char pass[9];
+	char pass[14];
 	
 	srand(time(NULL));
-	for (i = 0; i < 8 ; i++)
+	for (i = 0; i < 14 ; i++)
 		pass[i] = ('!' + (rand() % 95));
-	pass[8] = '\0';
+	pass[14] = '\0';
 	printf ("%s \n", pass);
 
 
