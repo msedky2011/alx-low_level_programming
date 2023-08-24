@@ -4,7 +4,7 @@
 #include <string.h>
 
 char* reverse_string(char* str) {
-    int length = strlen(str);
+    int length = _strlen(str);
     int i;
     char temp;
     for (i = 0; i < length / 2; i++) {
@@ -18,8 +18,8 @@ char* reverse_string(char* str) {
 char* infinite_add(char* n1, char* n2, char* r, int size_r) {
     int carry = 0;
     int index = 0;
-    int n1_length = strlen(n1);
-    int n2_length = strlen(n2);
+    int n1_length = _strlen(n1);
+    int n2_length = _strlen(n2);
     int digit1=0;
     int digit2=0;
     int sum=0;
