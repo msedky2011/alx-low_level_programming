@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *leet-that concatenates two strings.
+ *rot13-that mapping letters.
  *
  *@a:array
  *
@@ -11,14 +11,14 @@
 char *rot13(char *a)
 {
 	char alp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int rot[] =  "nopqrstuvwxyzabcefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char rot[] =  "nopqrstuvwxyzabdcefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int i, j;
 
 for (i = 0; a[i] != '\0'; i++)
 {
-	for (j = 0 ; j < 4; j++)
-		if ((a[i] == alp[j]) || (a[i] == alp[j] + 32))
-			a[i] = map[j] + 48;
+	for (j = 0 ; j <= 52; j++)
+		if (a[i] == alp[j])
+			a[i] = rot[j];
 
 }
 return (a);
