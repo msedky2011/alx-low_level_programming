@@ -8,10 +8,10 @@
  *Return: pointer to the resulting string
  */
 
-char *leet(char *a)
+char *rot13(char *a)
 {
-	char alp[] = {'A', 'E', 'o', 'T', 'L'};
-	int map[] = {4, 3, 0, 7, 1};
+	char alp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int rot[] =  "nopqrstuvwxyzabcefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int i, j;
 
 for (i = 0; a[i] != '\0'; i++)
