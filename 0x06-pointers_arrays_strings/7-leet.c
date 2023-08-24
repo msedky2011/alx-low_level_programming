@@ -10,7 +10,7 @@
 
 char *leet(char *a)
 {
-	char alp[] = {'A', 'E', 'o', 'T', 'L'};
+	char alp[] = {'A', 'E', 'O', 'T', 'L'};
 	int map[] = {4, 3, 0, 7, 1};
 	int i, j;
 
