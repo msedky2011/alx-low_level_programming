@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *_atoi - convert string to intger
- *@s: array string
+ *print_number - convert string to intger
+ *@n: int parameter
  *Return: intiger
  */
 void print_number(int n)
@@ -13,7 +13,7 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		n1 = - n;
+		n1 = -n;
 	}
 	if (n1 / 10 != 0)
 	{
