@@ -17,7 +17,7 @@ char *leet(char *a)
 for (i = 0; a[i] != '\0'; i++)
 {
 	for (j = 0 ; j < 4; j++)
-		if ((a[i] == alp[j]) || (a[i] == (alp[j] + 32)))
+		if (a[i] == alp[j] || a[i] == alp[j] + 32)
 			a[i] = map[j] + 48;
 
 }
