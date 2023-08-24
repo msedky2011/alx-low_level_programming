@@ -2,6 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+int _strlen(char *s)
+{
+        int i;
+
+        for (i = 0; *s != '\0'; s++)
+        i++;
+
+        return (i);
+}
 
 char* reverse_string(char* str) {
     int length = _strlen(str);
