@@ -2,39 +2,44 @@
 /**
 *_strstr-find length of accept
 *
-*@s:string
+*@haystack:string
 *
-*@accept :string
+*@needle:string
 *
-*Return:length
+*Return:nothing
 */
-
-char *_strstr(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j;
-	int broken = 0;
+	int count = 0, a = 0, k, j = 0, l, i = 0;
+	char *p;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (needle[count] != '\0')
 	{
-		if (s[i] == accept[0])
-		{
-			broken = 0;
-			for (j = 0 ; accept[j] != '\0'; j++)
-			{
-				if (s[i + j] != accept[j])
-				{
-					broken = 1;
-					break;
-				}
+		count++;
+	}
+	while (haystack[i] != '\0')
+	{
+		i++;
 			}
-
-			if (!broken)
+	if (count == 0)
+		return (haystack);
+	while (haystack[j] != '\0')
+	{
+		if (haystack[j] == needle[0])
+		{
+			p = &haystack[j];
+			l = j;
+			a = 0;
+			for (k = 0; k < count; k++)
 			{
-				return (s + i);
+				if (haystack[l] == needle[k])
+					a++;
+				l++;
 			}
 		}
-
+		if (a == count)
+			return (p);
+		j++;
 	}
-
-	return (NULL);
+	return ('\0');
 }
