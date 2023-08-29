@@ -16,11 +16,14 @@ char *_strstr(char *s, char *accept)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+	
 		if (s[i] == accept[0])
 		{
 			broken = 0;
-			for (j = 0 ; s[i + j + 1] != '\0' && accept[j] != '\0'; j++)
+			for (j = 0 ; accept[j] != '\0'; j++)
 			{
+				if (s[i+j+1]=='\0')
+					break;
 				if (s[i + j] != accept[j])
 				{
 					broken = 1;
