@@ -2,6 +2,7 @@
 /**
  *print_chessboard-print two dim array
  *
+ *
  *@a:array
  *
  *Return:void
