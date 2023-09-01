@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	f = 0;
 	if (argc != 3)
 	{
-		printf("%s\n","Error");
+		printf("%s\n", "Error");
 			f = 1;
 	}
 	else
