@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-/**
+/*i*
  * print_all - Entry Point
  * @format: list of arg types
  * Return: 0
@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 
 	while (format && format[i])
 		i++;
-	while (format && format[i])
+	while (format && format[k])
 	{
 		if (k == (i - 1))
 			sp = "";
