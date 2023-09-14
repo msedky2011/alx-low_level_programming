@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-/*i*
+/**
  * print_all - Entry Point
  * @format: list of arg types
  * Return: 0
