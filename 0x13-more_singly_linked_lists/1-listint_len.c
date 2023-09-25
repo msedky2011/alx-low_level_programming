@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- *print_listint - calculate number of nodes of listed link
+ *listint_len - calculate number of nodes of listed link
  *
  *@h:pointer to head of linked list
  *
