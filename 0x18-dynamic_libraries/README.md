@@ -1,1 +1,1 @@
-learn dynamic library
+learn more about dynamic library
